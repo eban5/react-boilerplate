@@ -51,7 +51,7 @@ body,
   height: 100%;
 }
 #root {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   background: white;
 }
 #root .menu {
