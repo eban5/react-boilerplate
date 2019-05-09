@@ -1,17 +1,13 @@
 import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom';
-import "../styles/Navigation.css";
+import { Link, NavLink } from 'react-router-dom';
 
 export default class Navigation extends Component {
     render() {
         return (
-            <div id="dashboard">
-                <div className="menu">
-                    <NavLink exact to="/home">Home</NavLink>
-                    <NavLink exact to="/about">About</NavLink>
-                </div>
-
-            </div>
+            <nav className="navbar navbar-dark bg-primary fixed-top">
+                <Link className="navbar-brand" exact to="/">Home</Link>
+                <Link className="navbar-brand" to="/about">About</Link>
+            </nav>
         )
     }
 }
